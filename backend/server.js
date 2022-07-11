@@ -16,6 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/goals', require('./routes/goalRoute'))
+app.use('/api/users', require('./routes/userRoute'))
+
 
 // @desc implement default error handling in express
 app.use(errorHandler)
